@@ -112,7 +112,7 @@ Vagrant.configure("2") do |config|
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80/ --recv-key 073D307A618E5811
     apt-get update
     apt-get upgrade
-    apt-get install -y gdal-bin
+    apt-get install -y gdal-bin python-gdal
     apt-get install -y xauth zip
     apt-get install -y ifupdown
     apt-get install -y fonts-liberation
