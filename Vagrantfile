@@ -6,6 +6,7 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
+  config.vm.synced_folder "/Volumes/2TB WD Elements/", "/mnt/ext_2tb/"
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
@@ -53,8 +54,8 @@ Vagrant.configure("2") do |config|
   #   vb.gui = true
   #
     # Customize the amount of memory on the VM:
-    vb.memory = "4096"
-    vb.cpus = 2
+    vb.memory = "12192"
+    vb.cpus = 4
     vb.customize ["modifyvm", :id, "--cableconnected1", "on"]
   end
   #
